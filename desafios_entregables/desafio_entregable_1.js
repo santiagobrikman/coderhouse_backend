@@ -9,8 +9,12 @@ class productManager {
         return this.products;
       }
 
-    getProductById(id2) {
-        return this.products.find(product => product.id === id2);
+    getProductById(id_search) {
+
+        if (this.products.find(e => e.id === id_search)) {
+            return this.products.find(product => product.id === id2);
+          }
+        return "Not found"
     }
 
     addProduct(title, description, price, thumbnail, code, stock) {
@@ -44,6 +48,6 @@ product_class.addProduct("Canon R5", "Mirrorless versatile camera", 2500, "/file
 
 // Testeo de métodos
 console.log(product_class.getProducts())
-console.log(product_class.getProductById(4))
+console.log(product_class.getProductById(2))
 
     
