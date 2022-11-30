@@ -1,5 +1,5 @@
 class productManager {
-    #precioBaseDeGanancia = 1.15;
+    #tax = 0.25 // Coeficiente de IVA del producto
 
     constructor() {
         this.products = []
@@ -12,7 +12,7 @@ class productManager {
     getProductById(id_search) {
 
         if (this.products.find(e => e.id === id_search)) {
-            return this.products.find(product => product.id === id2);
+            return this.products.find(product => product.id === id_search);
           }
         return "Not found"
     }
@@ -21,7 +21,7 @@ class productManager {
         let product = {
           title,
           description,
-          price: this.#precioBaseDeGanancia * 2,
+          price: (1 + this.#tax) * price,
           thumbnail,
           code, 
           stock,
@@ -48,6 +48,7 @@ product_class.addProduct("Canon R5", "Mirrorless versatile camera", 2500, "/file
 
 // Testeo de métodos
 console.log(product_class.getProducts())
-console.log(product_class.getProductById(2))
+console.log(product_class.getProductById(2)) // Buscar id = 2
+console.log(product_class.getProductById(4)) // Buscar id = 4 (Not found)
 
     
