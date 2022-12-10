@@ -83,10 +83,10 @@ product_class.addProduct("Sony A9", "Sports camera", 5000, "/filepathsonya9", 'P
 product_class.addProduct("Canon R5", "Mirrorless versatile camera", 2500, "/filepathcanonr5", 'PRD003', 400);
 product_class.addProduct("Fuji X-T4", "Weather sealed camera", 2300, "/filepathfujixt4", 'PRD004', 500);
 
-// //Consultar todos los productos
+//Consultar todos los productos
 console.log(product_class.getProducts())
 
-// //Consultar productos específicos
+//Consultar productos específicos
 console.log(product_class.getProductById(1))
 console.log(product_class.getProductById(4))
 

@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Sony A1",
+		"description": "Best camera in town",
+		"price": 10000,
+		"thumbnail": "/filepathsonya1",
+		"code": "PRD001",
+		"stock": 200,
+		"id": 1
+	}
+]	{
+		"title": "Sony A9",
+		"description": "Sports camera",
+		"price": 6250,
+		"thumbnail": "/filepathsonya9",
+		"code": "PRD002",
+		"stock": 300,
+		"id": 2
+	},
+	{
+		"title": "Canon R5",
+		"description": "Mirrorless versatile camera",
+		"price": 3125,
+		"thumbnail": "/filepathcanonr5",
+		"code": "PRD003",
+		"stock": 400,
+		"id": 3
+	},
+	{
+		"title": "Fuji X-T4",
+		"description": "Weather sealed camera",
+		"price": 2875,
+		"thumbnail": "/filepathfujixt4",
+		"code": "PRD004",
+		"stock": 500,
+		"id": 4
+	}
+]
