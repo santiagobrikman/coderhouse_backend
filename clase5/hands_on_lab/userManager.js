@@ -26,3 +26,7 @@ class UserManager {
         return await this.users
     }
 }
+
+const user_class = new UserManager(); // Creación de instancia
+
+console.log(user_class.getUsers)
