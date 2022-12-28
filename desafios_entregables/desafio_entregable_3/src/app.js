@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
   app.get('/products', async (req, res) => {
     const { limit } = req.query
     const products = await productManager.getProducts()
+    if(!limit) return res.send(products)
     const limited = products.filter(limited => limited.id <= limit)
     res.send(limited)
 
